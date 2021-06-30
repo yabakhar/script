@@ -1,0 +1,8 @@
+lien = document.getElementsByClassName("yt-simple-endpoint style-scope ytd-playlist-panel-video-renderer")
+
+let arr = []
+
+for (i = 0; i < lien.length ; i++)
+    arr.push(lien[i].getAttribute("href"))
+
+JSON.stringify(arr)
